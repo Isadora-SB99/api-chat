@@ -1,9 +1,10 @@
 {
-  "name": "api-chat",
+  "name": "api-node-mongo",
   "version": "1.0.0",
   "description": "api chat info",
-  "main": "api.js",
+  "main": "index.js",
   "scripts": {
+    "start":"node ./bin/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,9 +12,11 @@
     "url": "git+https://github.com/Isadora-SB99/api-chat.git"
   },
   "keywords": [
-    "chatinfo",
     "chat",
-    "api"
+    "api",
+    "mongo",
+    "node",
+    "info"
   ],
   "author": "Isadora",
   "license": "ISC",
@@ -22,7 +25,8 @@
   },
   "homepage": "https://github.com/Isadora-SB99/api-chat#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mongodb": "^5.2.0"
+    "mongodb": "^5.3.0"
   }
 }
