@@ -1,0 +1,10 @@
+[{
+  "_id": {
+    "$oid": "643f2356fb9bd3bddbfe9c5d"
+  },
+  "nick": "yoda",
+  "cor": "#FF00F0",
+  "timeout": {
+    "$numberLong": "79103529107"
+  }
+}]

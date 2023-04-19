@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "643f222bfb9bd3bddbfe9c57"
+  },
+  "nome": "Guerreiros da Info",
+  "tipo": "publica"
+},{
+  "_id": {
+    "$oid": "643f2272fb9bd3bddbfe9c59"
+  },
+  "nome": "Só os confirmados",
+  "tipo": "privada",
+  "chave": "7dxy5p"
+},{
+  "_id": {
+    "$oid": "643f22a2fb9bd3bddbfe9c5a"
+  },
+  "nome": "teste",
+  "tipo": "publica",
+  "msgs": [
+    {
+      "msg": "Olá",
+      "nick": "Zé",
+      "timesamp": ""
+    },
+    {
+      "msg": "Saudades de todos",
+      "nick": "Zé",
+      "timesamp": ""
+    }
+  ]
+}]
