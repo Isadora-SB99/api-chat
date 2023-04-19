@@ -16,4 +16,19 @@ app.use("/", router.get("/sobre", (req, res, next) => {
     })
 }));
 
+app.use("/", router.get("/salas/listar", (req, res, next) => {
+    res.status(200).send({
+        //devolve a lista das salas, puxando do banco de dados
+        // "nome":"nome da sala",
+        // "tipo":"tipo da sala"
+    })
+}));
+
+// app.use("/", router.get("/entrar", (req, res, next) => {
+//     res.status(200).send({
+//         "nick":"nickname",
+//         "cor":"#0F0F0F"
+//     })
+// }));
+
 module.exports=app;
