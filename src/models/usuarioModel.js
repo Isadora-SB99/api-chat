@@ -1,8 +1,7 @@
-// class Usuario {
-//     constructor(id, nick, cor, timeout){
-//         this.id = id,
-//         this.nick = nick,
-//         this.cor = cor,
-//         this.timeout = timeout
-//     }
-// }
+const db = require("./db");
+async function registrarUsuario(nick){
+    return await db.insertOne("usuario", {"nick": nick});
+
+}
+
+module.exports = {registrarUsuario}
