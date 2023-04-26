@@ -28,4 +28,26 @@ app.use("/entrar", router.post("/entrar", async (req, res, next) => {
     res.status(200).send(resp);
 }));
 
+
+
+//NOVAS ROTAS?
+
+//rota pra entrar na sala //id?
+app.use("/sala/entrar", router.get("/sala/entrar", async (req, res, next) => {
+    const salaController = require("./controllers/salaController");
+    let resp = await salaController.entrar(req.body.mensagem);
+    res.status(200).send(resp);
+
+}));
+
+//rota para listar mensagens //timestamp?
+app.use("/mensagens/listar", router.get("/mensagens/listar", (req, res, next) => {
+    const mensagemController = require("./controllers/mensagemController");
+    let resp = mensagemController.get();
+    res.status(200).send(resp);
+}));
+
+//rota para enviar mensagem
+
+
 module.exports = app;
