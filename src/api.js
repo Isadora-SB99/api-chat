@@ -48,6 +48,11 @@ app.use("/mensagens/listar", router.get("/mensagens/listar", (req, res, next) =>
 }));
 
 //rota para enviar mensagem
+app.use("/mensagens/enviar", router.post("/mensagens/enviar", async (req, res, next) => {
+    const usuarioController = require("./controllers/mensagemController");
+    let resp = await mensagemController.enviar(req.body.nick, req.body.mensagem);
+    res.status(200).send(resp);
+}));
 
 
 module.exports = app;

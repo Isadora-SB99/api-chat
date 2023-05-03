@@ -1,3 +1,6 @@
+//conexao node mongodb digitalocean
+// alterar código para envolver ^
+
 const { MongoClient, ObjectId } = require("mongodb");
 
 let singleton;
@@ -23,3 +26,10 @@ async function insertOne(collection, objeto) {
 }
 
 module.exports = { findAll, insertOne }
+
+
+
+// username = doadmin
+// password = <replace-with-your-password>
+// host = mongodb+srv://db-mongodb-nyc1-09935-0581ebb9.mongo.ondigitalocean.com
+// database = admin

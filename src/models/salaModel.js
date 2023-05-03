@@ -5,5 +5,8 @@ function listarSalas() {
 }
 
 //entrar na sala
+function entrarSala(){
+  return db.insertOne("")
+}
 
-module.exports = { listarSalas }
+module.exports = { listarSalas, entrarSala }

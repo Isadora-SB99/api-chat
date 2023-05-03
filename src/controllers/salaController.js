@@ -6,3 +6,6 @@ exports.get = async () => {
 }
 
 //entrar
+exports.post = async() => {
+    return await salaModel.entrarSala();
+}
