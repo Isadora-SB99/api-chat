@@ -4,4 +4,8 @@ async function registrarUsuario(nick) {
     return await db.insertOne("usuario", { "nick": nick });
 }
 
-module.exports = { registrarUsuario }
+async function getUser(idUser){
+    return await db.findById("usuario", idUser);
+}
+
+module.exports = { registrarUsuario, getUser }

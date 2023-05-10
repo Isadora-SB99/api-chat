@@ -35,7 +35,7 @@ app.use("/entrar", router.post("/entrar", async (req, res, next) => {
 //rota pra entrar na sala //id?
 app.use("/sala/entrar", router.get("/sala/entrar", async (req, res, next) => {
     const salaController = require("./controllers/salaController");
-    let resp = await salaController.entrar(req.body.mensagem);
+    let resp = await salaController.entrar(req.headers.idUser);
     res.status(200).send(resp);
 
 }));
